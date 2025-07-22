@@ -1,0 +1,44 @@
+{
+  "1": {
+    "inputs": {
+      "image": "example.png",
+      "upload": "image"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "2": {
+    "inputs": {
+      "model_type": "watermarks_detect_best",
+      "confidence": 0.05,
+      "iou_threshold": 0.2
+    },
+    "class_type": "WatermarkDetectorLoader",
+    "_meta": {
+      "title": "Load Watermark Detector"
+    }
+  },
+  "3": {
+    "inputs": {
+      "watermark_model": ["2", 0],
+      "images": ["1", 0],
+      "resolution": "1280"
+    },
+    "class_type": "WatermarkDetector",
+    "_meta": {
+      "title": "Detect Watermarks"
+    }
+  },
+  "4": {
+    "inputs": {
+      "images": ["3", 0],
+      "filename_prefix": "watermark_detection"
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  }
+}
