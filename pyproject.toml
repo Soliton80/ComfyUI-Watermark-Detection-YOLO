@@ -33,7 +33,7 @@ Documentation = "https://github.com/soliton80/ComfyUI-Watermark-Detection-YOLO/b
 [tool.comfy]
 PublisherId = "@soliton" 
 DisplayName = "Watermark Detection YOLO Custom Node"
-Icon = "https://github.com/soliton80/ComfyUI-Watermark-Detection-YOLO/yolofav.png"  # Optional
+Icon = "https://github.com/Soliton80/ComfyUI-Watermark-Detection-YOLO/blob/main/yolofav.png"  # Optional
 
 [build-system]
 requires = ["setuptools>=45", "wheel"]
