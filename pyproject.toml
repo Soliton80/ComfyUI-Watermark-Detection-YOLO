@@ -1,14 +1,14 @@
 [project]
 name = "ComfyUI-Watermark-Detection-YOLO"
-version = "1.0.0"
-description = "Custom watermark detection using trained YOLO11 model for ComfyUI"
+version = "1.0.2"
+description = "Custom watermark detection using rained on 24,558 watermark images YOLO11 model for ComfyUI"
 authors = [
     {name = "soliton80"}
 ]
 license = {text = "MIT"}
 readme = "README.md"
 requires-python = ">=3.8"
-keywords = ["comfyui", "watermark", "fade watermark", "detection", "yolo11", "custom-node"]
+keywords = ["comfyui", "watermark", "semi-transparent watermark", "fade watermark", "detection", "yolo11", "custom-node"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
@@ -31,9 +31,9 @@ Issues = "https://github.com/soliton80/ComfyUI-Watermark-Detection-YOLO/issues"
 Documentation = "https://github.com/soliton80/ComfyUI-Watermark-Detection-YOLO/blob/main/README.md"
 
 [tool.comfy]
-PublisherId = "@soliton" 
+PublisherId = "soliton" 
 DisplayName = "Watermark Detection YOLO Custom Node"
-Icon = "https://github.com/Soliton80/ComfyUI-Watermark-Detection-YOLO/blob/main/yolofav.png"  # Optional
+Icon = "https://raw.githubusercontent.com/Soliton80/ComfyUI-Watermark-Detection-YOLO/main/yolofav.png"
 
 [build-system]
 requires = ["setuptools>=45", "wheel"]
