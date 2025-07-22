@@ -19,6 +19,8 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+venv/
+.venv/
 
 # IDE
 .vscode/
@@ -36,3 +38,4 @@ Thumbs.db
 # Temporary files
 temp/
 tmp/
+notes.txt
